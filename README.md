@@ -1,2 +1,2 @@
 # accessibility-tabbing-focus
-Quick way to highlight focused element for accessibility. Only highlights element when tabbed to.
+A quick way to highlight a focused element for accessibility. Only highlights an element when being tabbed to. Intended to assist in the focused element aspect of ADA compliance that requires focused elements to be displayed as focused for users using the keyboard for navigation. The focus highlight will only show if tabbing through elements and will not display with other DOM interaction.
