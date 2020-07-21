@@ -1,10 +1,10 @@
-(function(color){
+function addAccessibilityTabbingFocus(focusColor){
   let currentTabbedFocus = null;
   let focusedTabClass = 'tabbed-focus';
 
   let css = '.' + focusedTabClass + '{';
-  css += 'box-shadow: inset 0px 0px 2px ' + color + ', inset 0px 0px 6px ' + color;
-  css += ', 0px 0px 2px ' + color + ', 0px 0px 6px ' + color + '!important;';
+  css += 'box-shadow: inset 0px 0px 2px ' + focusColor + ', inset 0px 0px 6px ' + focusColor;
+  css += ', 0px 0px 2px ' + focusColor + ', 0px 0px 6px ' + focusColor + '!important;';
   css += 'outline: none;';
   css += '}';
 
@@ -41,4 +41,4 @@
     currentTabbedFocus = null;
   });
 
-})('#004a97');
+};
